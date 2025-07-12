@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sora:wght@700&display=swap');
+
+:root {
+  --background: 235 16% 15%;
+  --foreground: 0 0% 98%;
+  --card: 235 18% 20%;
+  --primary: 267 89% 70%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 235 16% 25%;
+  --accent: 267 100% 80%;
+  --border: 235 16% 25%;
+  --radius: 0.75rem;
+}
+
+.light {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --primary: 267 89% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 4.8% 95.9%;
+  --accent: 267 100% 90%;
+  --border: 240 5.9% 90%;
+}
+
+body {
+  @apply bg-gradient-to-tr from-[#181c2f] via-[#232946] to-[#1a1a2e] text-[hsl(var(--foreground))] font-sans text-base antialiased;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
